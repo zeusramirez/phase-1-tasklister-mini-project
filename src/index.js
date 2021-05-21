@@ -11,8 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   listElly.append(delBtn)
   delBtn.addEventListener('click', (e)=>{
     listElly.remove()
+  })
+  listElly.append.innerHTML = `<select>
+  <option value="books">Books</option>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  </select>`
 
   })
-  })
-  
 })
