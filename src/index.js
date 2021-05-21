@@ -12,11 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
   delBtn.addEventListener('click', (e)=>{
     listElly.remove()
   })
-  listElly.append.innerHTML = `<select>
-  <option value="books">Books</option>
-  <option value="html">HTML</option>
-  <option value="css">CSS</option>
+  let deeperListElly = document.createElement('div')
+  listElly.appendChild(deeperListElly)
+  deeperListElly.innerHTML = `<select>
+  <option value="red">High</option>
+  <option value="yellow">Medium</option>
+  <option value="green">Low</option>
   </select>`
-
+  deeperListElly.addEventListener('click', (e) => {
+    listElly.style.color = e.target.value
+  })
   })
 })
