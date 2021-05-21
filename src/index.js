@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   document.querySelector('form').addEventListener('submit', (e) => {
@@ -8,6 +9,3 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('ul').append(listElly)
   })
 })
-  
-
-  
