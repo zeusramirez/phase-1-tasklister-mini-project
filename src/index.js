@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <option value="yellow">Medium</option>
   <option value="green">Low</option>
   </select>`
-  deeperListElly.addEventListener('click', (e) => {
+  deeperListElly.addEventListener('change', (e) => {
     listElly.style.color = e.target.value
   })
   })
